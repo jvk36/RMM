@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+TestArrays
+TestMultipleArrays
+TestMultipleObjects
+TestNestedRegion
+TestObjects
+
+#vscode
+.vscode
+
+
