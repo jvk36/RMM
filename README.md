@@ -44,3 +44,5 @@ Many potential use cases are indicated in the test programs. A summary follows:
 a) Allocating, Doing some Work, and Deallocating Arrays using RMM - TestArrays.cpp and TestMultipleArrays.cpp
 b) Allocating, Doing some Work, and Deallocating Objects using RMM - TestObjects.cpp and TestMultipleObjects.cpp
 c) Allocating, Doing some Work, and Deallocating Nested Regions using RMM - TestNestedRegions.cpp
+
+For more details on the test programs, please see the Test_Coverage.txt file under the src sub-directory.
