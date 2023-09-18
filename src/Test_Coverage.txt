@@ -1,0 +1,25 @@
+TestArrays.cpp
+
+Covers Creation of one region and allocation of one array within that region.
+
+TestMultipleArrays.cpp
+
+Creates 2 regions and allocates an array into each region independantly.  The first region is freed, the second is not and then the cycle loops.
+This is to test region independance.  As well, since the second region was not freed, it tests to see if allocating into that second region will
+keep the first allocated memory in there or overwrite it.
+
+TestMultipleObjects.cpp
+
+Similar to the previous test, this allocates two regions and pushes 5 random numbers into both of them independantly. 
+In this case they are both freed, to test that they can be freed individually.
+
+TestNestedRegions.cpp
+
+This test allocates a region of 10mb and then allocates within it another region of 1 mb.  This test ensures that
+this can be done safely.  As well, different equations are computed with their results being stored in the nested region to show that it does not affect the 
+larger region, but does affect the smaller region.  As well, deallocation is preformed on the nested region to show that it does not affect the larger retion. 
+
+TestObjects.cpp
+
+This test allocates a region and add things to it.  It then frees its region.  It repeats multiple times to ensure that it can be repeated and it is
+not a one time deletion.
